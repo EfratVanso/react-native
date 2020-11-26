@@ -3,7 +3,10 @@ import { TextInput, StyleSheet } from 'react-native'
 
 export default function TextScreen() {
     return (
-        <TextInput style={styles.input}/>
+        <TextInput
+        autoCapitalize="none"// for case like user name {IOS}
+        autoCorrect={false}// "
+        style={styles.input}/>
     )
 }
 const styles = StyleSheet.create({
